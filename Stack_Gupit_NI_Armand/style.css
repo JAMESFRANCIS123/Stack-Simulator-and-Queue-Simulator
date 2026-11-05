@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4f8;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px #0002;
+}
+
+h1 {
+    color: #2563eb;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin: 20px 0;
+}
+
+input {
+    padding: 10px;
+    width: 180px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+#message {
+    min-height: 24px;
+    color: #dc2626;
+    font-weight: bold;
+}
+
+.stack-area {
+    min-height: 250px;
+    border: 2px solid #2563eb;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+}
+
+.label {
+    font-weight: bold;
+    color: #2563eb;
+    padding: 5px;
+}
+
+.block {
+    width: 180px;
+    padding: 12px;
+    background: #3b82f6;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.highlight {
+    background: #f59e0b;
+    color: black;
+}
+
+.deleted-area {
+    min-height: 50px;
+    border: 1px dashed #999;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.deleted {
+    background: #ef4444;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}

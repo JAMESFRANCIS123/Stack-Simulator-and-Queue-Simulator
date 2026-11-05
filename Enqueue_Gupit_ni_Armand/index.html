@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queue Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Queue Simulator</h1>
+        <p>First In, First Out (FIFO)</p>
+
+        <div class="controls">
+            <input type="text" id="valueInput" placeholder="Enter a value">
+
+            <button onclick="enqueue()">Enqueue</button>
+            <button onclick="dequeue()">Dequeue</button>
+            <button onclick="peek()">Peek</button>
+            <button onclick="clearQueue()">Clear</button>
+        </div>
+
+        <p id="message"></p>
+
+        <h2>Queue Display</h2>
+        <div class="queue-area">
+            <div class="label">FRONT → REAR</div>
+            <div id="queueDisplay"></div>
+        </div>
+
+        <h2>Deleted Elements</h2>
+        <div id="deletedDisplay" class="deleted-area"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
